@@ -7,7 +7,86 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1{
+  /* Caption Strong */
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+
+/* Dark */
+
+color: #1E1E1E;
+text-align: left;
+padding-left: 20px;
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+thead{
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+
+  /* Dark (Opacity 35%) */
+
+  color: rgba(30, 30, 30, 0.35);
+}
+
+tr>td:nth-child(1){
+  /* Caption Strong */
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+  /* Dark */
+
+  color: #1E1E1E;
+}
+tr>td{
+  /* Caption Strong */
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+
+/* Dark (Opacity 65%) */
+
+color: rgba(30, 30, 30, 0.65);
+}
+
+tr, th, td, tbody, thead, table{
+  border-bottom: 1px solid #00000022;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+img{
+  height: 22px;
+  width: 22px;
+  margin-right: 5px;
+}
+
+.negative{
+  color: red;
+}
+
+.positive{
+  color: blue;
 }
