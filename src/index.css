@@ -50,8 +50,9 @@ tr>td:nth-child(1){
   font-size: 12px;
   line-height: 15px;
   display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    padding-left: 18px;
 
   /* Dark */
 
@@ -69,24 +70,28 @@ line-height: 15px;
 /* Dark (Opacity 65%) */
 
 color: rgba(30, 30, 30, 0.65);
+text-align: left;
 }
-
-tr, th, td, tbody, thead, table{
+th{
+  text-align: left;
+}
+tr, tbody, thead, table{
   border-bottom: 1px solid #00000022;
   border-collapse: collapse;
-  padding: 10px;
+  padding-top: 9px;
+  padding-bottom: 8px;
 }
 
 img{
   height: 22px;
   width: 22px;
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .negative{
-  color: red;
+  color: #FF492D;
 }
 
 .positive{
-  color: blue;
+  color: #61BF1E;
 }
