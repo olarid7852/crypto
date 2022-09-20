@@ -3,10 +3,10 @@ import coin_map from "./coin_map.json";
 
 
 const toReadableCurrencyValue = (amount) => {
-  if (amount > 10 ** 12) return `${(amount / 10 ** 12).toFixed(2)} T`
-  if (amount > 10 ** 9) return `${(amount / 10 ** 9).toFixed(2)} B`
-  if (amount > 10 ** 6) return `${(amount / 10 ** 6).toFixed(2)} M`
-  if (amount > 10 ** 3) return `${(amount / 10 ** 3).toFixed(2)} K`
+  if (amount > 10 ** 12) return `${(amount / 10 ** 12).toFixed(1)}T`
+  if (amount > 10 ** 9) return `${(amount / 10 ** 9).toFixed(1)}B`
+  if (amount > 10 ** 6) return `${(amount / 10 ** 6).toFixed(1)}M`
+  if (amount > 10 ** 3) return `${(amount / 10 ** 3).toFixed()}K`
   return amount
 }
 const BASE_CURRENCY = 'USDT'
