@@ -43,7 +43,7 @@ function App() {
               <td><img src={value['logo']}/>{value['name']}</td>
               <td>{socketValue[value['s']] || value['c']}</td>
               <td className={value['24'] >= 0 ? 'positive' : 'negative'}>{value['24']}%</td>
-              <td className={value['7'] >= 0 ? 'positive' : 'negative'}>{value['7']}%</td>
+              <td>{value['7']}%</td>
               <td>{value['mrk']}</td>
             </tr>)
           )}
