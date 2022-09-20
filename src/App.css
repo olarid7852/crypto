@@ -1,6 +1,42 @@
-.App {
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.main > div{
+  overflow: scroll;
+  height: 100%;
+}
+.container {
+  background: #1E1E1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.main {
   text-align: center;
+  width: 400px;
+  height: 400px;
   padding: 12px;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .App-logo {

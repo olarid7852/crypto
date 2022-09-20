@@ -40,8 +40,8 @@ const useFetchPairs = () => {
         const pairs = pairDataJson.data.filter(data => data['s'].includes(BASE_CURRENCY) && data['s'].indexOf(BASE_CURRENCY) > 1).map(data => {
           data['name'] = data['s'].replace('USDT', '')
           data['mrk'] = toReadableCurrencyValue(data['c'] * data['cs'])
-          data['24'] = twentyFourHourPriceChangeDict[data['s']]
-          data['7'] = sevenDaysPriceChangeDict[data['s']] || '-'
+          data['24'] = Number(twentyFourHourPriceChangeDict[data['s']]).toFixed(2)
+          data['7'] = sevenDaysPriceChangeDict[data['s']] ? Number(sevenDaysPriceChangeDict[data['s']]).toFixed(2) : '0.00'
           data['logo'] = coinLogoDict[data['name']]
           return data
         })
