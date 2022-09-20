@@ -20,7 +20,6 @@ h1 {
 
   color: #1E1E1E;
   text-align: left;
-  padding-left: 20px;
 
 }
 
@@ -40,7 +39,9 @@ thead {
 
   color: rgba(30, 30, 30, 0.35);
 }
-
+tr>td:nth-child(5) {
+  padding-right: 3px;
+}
 tr>td:nth-child(1) {
   /* Caption Strong */
 
@@ -52,7 +53,7 @@ tr>td:nth-child(1) {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-left: 18px;
+  padding-left: 6px;
 
   /* Dark */
 
